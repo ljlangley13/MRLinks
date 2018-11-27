@@ -1,4 +1,4 @@
-package com.mushroomrevival.mrlinks.korikutils;
+package com.shadowblox.shadowlinks.korikutils;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;

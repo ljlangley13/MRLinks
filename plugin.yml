@@ -1,59 +1,59 @@
-name: MRLinks
-main: com.mushroomrevival.mrlinks.MRLinks
-version: 1.6
+name: ShadowLinks
+main: com.shadowblox.shadowlinks.ShadowLinks
+version: 2.0
              This plugin provides links related to your server. 
 commands:
    Map:
       description: Shows you the map link.
-      permission: mrlinks.linkmap
+      permission: shadowlinks.linkmap
       permission-message: You don't have <permission>
    Vote:
       description: Shows you the vote link.
-      permission: mrlinks.linkvote
+      permission: shadowlinks.linkvote
       permission-message: You don't have <permission>
    Contest:
       description: Shows you the contest link.
-      permission: mrlinks.linkcotest
+      permission: shadowlinks.linkcotest
       permission-message: You don't have <permission>
    Teamspeak:
       description: Shows you the Teamspeak IP.
-      permission: mrlinks.linkteamspeak
+      permission: shadowlinks.linkteamspeak
       permission-message: You don't have <permission>
    Mumble:
       description: Shows you the Mumble IP.
-      permission: mrlinks.linkmumble
+      permission: shadowlinks.linkmumble
       permission-message: You don't have <permission>
    Website:
       description: Shows you the website link.
-      permission: mrlinks.linkwebsite
+      permission: shadowlinks.linkwebsite
       permission-message: You don't have <permission>
    Facebook:
       description: Shows you the Facebook link.
-      permission: mrlinks.linkfacebook
+      permission: shadowlinks.linkfacebook
       permission-message: You don't have <permission>
    Twitter:
       description: Shows you the Twitter link.
-      permission: mrlinks.linktwitter
+      permission: shadowlinks.linktwitter
       permission-message: You don't have <permission>
    Twitch:
       description: Shows you the Twitch link.
-      permission: mrlinks.linktwitch
+      permission: shadowlinks.linktwitch
       permission-message: You don't have <permission>
    Youtube:
       description: Shows you the Youtube link.
-      permission: mrlinks.linkyoutube
+      permission: shadowlinks.linkyoutube
       permission-message: You don't have <permission>
    Instagram:
       description: Shows you the Instagram link.
-      permission: mrlinks.linkinstagram
+      permission: shadowlinks.linkinstagram
       permission-message: You don't have <permission>
    Donate:
       description: Shows you the Donation link.
-      permission: mrlinks.linkdonate
+      permission: shadowlinks.linkdonate
       permission-message: You don't have <permission>
    Note:
       description: Allows you to save, read and delete notes.
-      permission: mrlinks.note
+      permission: shadowlinks.note
       permission-message: You don't have <permission>
    ShadowLinks:
       description: Tells you information about ShadowLinks.

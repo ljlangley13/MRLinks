@@ -1,4 +1,4 @@
-package com.mushroomrevival.mrlinks;
+package com.shadowblox.shadowlinks;
 
 import org.bukkit.ChatColor;
 

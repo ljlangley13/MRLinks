@@ -1,4 +1,4 @@
-package com.mushroomrevival.mrlinks.korikutils;
+package com.shadowblox.shadowlinks.korikutils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

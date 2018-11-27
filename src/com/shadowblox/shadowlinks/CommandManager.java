@@ -1,19 +1,19 @@
-package com.mushroomrevival.mrlinks;
+package com.shadowblox.shadowlinks;
 
-import com.mushroomrevival.mrlinks.commands.ContestCommand;
-import com.mushroomrevival.mrlinks.commands.MapCommand;
-import com.mushroomrevival.mrlinks.commands.DonateCommand;
-import com.mushroomrevival.mrlinks.commands.FacebookCommand;
-import com.mushroomrevival.mrlinks.commands.InstagramCommand;
-import com.mushroomrevival.mrlinks.commands.MumbleCommand;
-import com.mushroomrevival.mrlinks.commands.NoteCommand;
-import com.mushroomrevival.mrlinks.commands.MRLinksCommand;
-import com.mushroomrevival.mrlinks.commands.TeamspeakCommand;
-import com.mushroomrevival.mrlinks.commands.TwitchCommand;
-import com.mushroomrevival.mrlinks.commands.TwitterCommand;
-import com.mushroomrevival.mrlinks.commands.VoteCommand;
-import com.mushroomrevival.mrlinks.commands.WebsiteCommand;
-import com.mushroomrevival.mrlinks.commands.YoutubeCommand;
+import com.shadowblox.shadowlinks.commands.ContestCommand;
+import com.shadowblox.shadowlinks.commands.MapCommand;
+import com.shadowblox.shadowlinks.commands.DonateCommand;
+import com.shadowblox.shadowlinks.commands.FacebookCommand;
+import com.shadowblox.shadowlinks.commands.InstagramCommand;
+import com.shadowblox.shadowlinks.commands.MumbleCommand;
+import com.shadowblox.shadowlinks.commands.NoteCommand;
+import com.shadowblox.shadowlinks.commands.ShadowLinksCommand;
+import com.shadowblox.shadowlinks.commands.TeamspeakCommand;
+import com.shadowblox.shadowlinks.commands.TwitchCommand;
+import com.shadowblox.shadowlinks.commands.TwitterCommand;
+import com.shadowblox.shadowlinks.commands.VoteCommand;
+import com.shadowblox.shadowlinks.commands.WebsiteCommand;
+import com.shadowblox.shadowlinks.commands.YoutubeCommand;
 
 public class CommandManager {
 	public ContestCommand contestCommand;
@@ -22,7 +22,7 @@ public class CommandManager {
 	public FacebookCommand facebookCommand;
 	public InstagramCommand instagramCommand;
 	public NoteCommand noteCommand;
-	public MRLinksCommand shadowlinksCommand;
+	public ShadowLinksCommand shadowlinksCommand;
 	public TeamspeakCommand teamspeakCommand;
 	public MumbleCommand mumbleCommand;
 	public TwitterCommand twitterCommand;
@@ -30,9 +30,9 @@ public class CommandManager {
 	public WebsiteCommand websiteCommand;
 	public YoutubeCommand youtubeCommand;
 	public TwitchCommand twitchCommand;
-	public MRLinks plugin;
+	public ShadowLinks plugin;
 
-	public CommandManager(MRLinks mrLinks) {
+	public CommandManager(ShadowLinks mrLinks) {
 		this.plugin = mrLinks;
 	}
 
@@ -40,7 +40,7 @@ public class CommandManager {
 		this.contestCommand = new ContestCommand(plugin);
 		this.mumbleCommand = new MumbleCommand(plugin);
 		this.twitchCommand = new TwitchCommand(plugin);
-		this.shadowlinksCommand = new MRLinksCommand(plugin);
+		this.shadowlinksCommand = new ShadowLinksCommand(plugin);
 		this.donateCommand = new DonateCommand(plugin);
 		this.facebookCommand = new FacebookCommand(plugin);
 		this.mapCommand = new MapCommand(plugin);

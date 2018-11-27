@@ -1,23 +1,21 @@
-package com.mushroomrevival.mrlinks;
+package com.shadowblox.shadowlinks;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.mushroomrevival.mrlinks.Metrics;
-import com.mushroomrevival.mrlinks.CommandManager;
+import com.shadowblox.shadowlinks.CommandManager;
 
-public class MRLinks extends JavaPlugin {
+public class ShadowLinks extends JavaPlugin {
 	public final Logger logger = Bukkit.getServer().getLogger();
-	public static MRLinks plugin;
+	public static ShadowLinks plugin;
 	public CommandManager commandManager;
-	private static MRLinks instance;
+	private static ShadowLinks instance;
 
-	public static MRLinks getInstance() {
+	public static ShadowLinks getInstance() {
 		return instance;
 	}
 
@@ -29,12 +27,6 @@ public class MRLinks extends JavaPlugin {
 	}
 	@Override
 	public void onEnable(){	
-		try {
-			Metrics metrics = new Metrics(this);
-			metrics.start();
-		} catch (IOException e) {
-			System.out.println("Error Submitting stats!");
-		}
 		File configFile = new File(this.getDataFolder().getAbsolutePath(),"config.yml");
 		if(configFile.exists() == false){
 			configFile.mkdir();

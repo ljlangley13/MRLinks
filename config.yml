@@ -1,6 +1,6 @@
-#MRLinks Configuration File
+#ShadowLinks Configuration File
 #Please insert the appropriate links after each variable. 
-#I recommend you use something such as Google URL Shortener or TinyURL for the links. 
+#I recommend you use something such TinyURL for the links. 
 Vote: VoteLink
 Map: MapLink
 Youtube: YoutubeLink
@@ -27,4 +27,4 @@ Enable-Teamspeak: true
 Enable-Mumble: true
 Enable-Notes: true
 Enable-Contest: true
-#Thank you for using MRLinks.
+#Thank you for using ShadowLinks.

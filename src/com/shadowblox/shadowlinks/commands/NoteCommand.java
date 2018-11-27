@@ -1,4 +1,4 @@
-package com.mushroomrevival.mrlinks.commands;
+package com.shadowblox.shadowlinks.commands;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,14 +11,14 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import com.mushroomrevival.mrlinks.Format;
-import com.mushroomrevival.mrlinks.MRLinks;
-import com.mushroomrevival.mrlinks.korikutils.SubCommandExecutor;
+import com.shadowblox.shadowlinks.Format;
+import com.shadowblox.shadowlinks.ShadowLinks;
+import com.shadowblox.shadowlinks.korikutils.SubCommandExecutor;
 
 public class NoteCommand extends SubCommandExecutor {
-	private MRLinks plugin;
+	private ShadowLinks plugin;
 
-	public NoteCommand(MRLinks instance) {
+	public NoteCommand(ShadowLinks instance) {
 		plugin = instance;
 	}
 
@@ -58,7 +58,7 @@ public class NoteCommand extends SubCommandExecutor {
 	@command
 	public void read(CommandSender sender, String[] args) {
 		if ((plugin.getConfig().getBoolean("Enable-Notes") == true)
-				&& sender.hasPermission("mrlinks.note.read")) {
+				&& sender.hasPermission("shadowlinks.note.read")) {
 			sender.sendMessage(Format.notificationMessage("Your notes:"));
 			File noteFile = new File(plugin.getDataFolder() + "/notes/",
 					sender.getName() + ".yml");
@@ -80,7 +80,7 @@ public class NoteCommand extends SubCommandExecutor {
 	public void save(CommandSender sender, String[] args) {
 
 		if ((plugin.getConfig().getBoolean("Enable-Notes") == true)
-				&& (sender.hasPermission("mrlinks.note.save"))) {
+				&& (sender.hasPermission("shadowlinks.note.save"))) {
 
 			File noteFile = new File(plugin.getDataFolder().getAbsolutePath()
 					+ "/notes/", sender.getName() + ".yml");
@@ -108,7 +108,7 @@ public class NoteCommand extends SubCommandExecutor {
 				i++;
 			}
 		} else {
-			sender.sendMessage(Format.errorMessage("You do not have permission to use this MRLinks command."));
+			sender.sendMessage(Format.errorMessage("You do not have permission to use this ShadowLinks command."));
 		}
 
 	}
@@ -116,7 +116,7 @@ public class NoteCommand extends SubCommandExecutor {
 	@command
 	public void delete(CommandSender sender, String[] args) {
 
-		if((plugin.getConfig().getBoolean("Enable-Notes") == true) && (sender.hasPermission("mrlinks.note.delete"))){   
+		if((plugin.getConfig().getBoolean("Enable-Notes") == true) && (sender.hasPermission("shadowlinks.note.delete"))){   
                     File noteFile = new File(plugin.getDataFolder() + "/notes/", sender.getName() + ".yml");
                     if(noteFile.exists()){
                             YamlConfiguration note = YamlConfiguration.loadConfiguration(noteFile);
@@ -144,7 +144,7 @@ public class NoteCommand extends SubCommandExecutor {
                     }
             }
             else{
-            	sender.sendMessage(Format.errorMessage("You do not have permission to use this MRLinks command."));                      
+            	sender.sendMessage(Format.errorMessage("You do not have permission to use this ShadowLinks command."));                      
             }
     }
 
