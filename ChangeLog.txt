@@ -1,3 +1,9 @@
+*2.1 - 
+# Added Discord Command
+# Added Forum Command
+# Edited Config file so that Mumble and Teamspeak are disabled by default. 
+# Added bStats for Plugin Metrics. 
+
 *2.0 -
 # Renamed the plugin back to ShadowBlox as that is the name of my current Minecraft company.
 # Updated to Minecraft 1.13.2 (Latest version of the time of publishing).
