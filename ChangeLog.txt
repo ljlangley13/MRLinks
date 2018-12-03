@@ -1,5 +1,7 @@
-* Next Version -
-*Added a message saying "Your Notes:" to /note read so that you can see that the command worked and it's not just lagging. This is useful if you have no notes.
+*2.0 -
+# Renamed the plugin back to ShadowBlox as that is the name of my current Minecraft company.
+# Updated to Minecraft 1.13.2 (Latest version of the time of publishing).
+# Removed Metrics because I think that website is dead. 
 
 * 1.4 -
 # Make the code for the plugin more professional and easier to read. 
