@@ -1,6 +1,8 @@
 package com.shadowblox.shadowlinks;
 
 import com.shadowblox.shadowlinks.commands.ContestCommand;
+import com.shadowblox.shadowlinks.commands.DiscordCommand;
+import com.shadowblox.shadowlinks.commands.ForumCommand;
 import com.shadowblox.shadowlinks.commands.MapCommand;
 import com.shadowblox.shadowlinks.commands.DonateCommand;
 import com.shadowblox.shadowlinks.commands.FacebookCommand;
@@ -17,6 +19,8 @@ import com.shadowblox.shadowlinks.commands.YoutubeCommand;
 
 public class CommandManager {
 	public ContestCommand contestCommand;
+	public ForumCommand forumCommand;
+	public DiscordCommand discordCommand;
 	public MapCommand mapCommand;
 	public DonateCommand donateCommand;
 	public FacebookCommand facebookCommand;
@@ -38,6 +42,8 @@ public class CommandManager {
 
 	public void initCommands() {
 		this.contestCommand = new ContestCommand(plugin);
+		this.forumCommand = new ForumCommand(plugin);
+		this.discordCommand = new DiscordCommand(plugin);
 		this.mumbleCommand = new MumbleCommand(plugin);
 		this.twitchCommand = new TwitchCommand(plugin);
 		this.shadowlinksCommand = new ShadowLinksCommand(plugin);
@@ -54,6 +60,10 @@ public class CommandManager {
 
 		this.plugin.getCommand("Contest").setExecutor(
 				this.contestCommand);
+		this.plugin.getCommand("Discord").setExecutor(
+				this.discordCommand);
+		this.plugin.getCommand("Forum").setExecutor(
+				this.forumCommand);
 		this.plugin.getCommand("Map").setExecutor(
 				this.mapCommand);
 		this.plugin.getCommand("Mumble").setExecutor(

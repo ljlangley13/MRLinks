@@ -38,5 +38,7 @@ public class ShadowLinks extends JavaPlugin {
 				initCommands();
 			}
 		};
+        if (getConfig().getBoolean("Metrics"))
+           new MetricsLite(this); 
 	}	
 }
