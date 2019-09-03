@@ -1,6 +1,6 @@
 *2.1 - 
-# Added Discord Command
-# Added Forum Command
+# Added Discord command.
+# Added Forum command.
 # Edited Config file so that Mumble and Teamspeak are disabled by default. 
 # Added bStats for Plugin Metrics. 
 
